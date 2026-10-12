@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | VoltCore</title>
+    <meta name="description" content="Review and manage items in your VoltCore shopping cart." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">V</span>
+          <span>VoltCore</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="cart.html" class="active">Cart <span class="cart-badge" id="cart-badge">0</span></a>
+        </nav>
+
+        <a href="checkout.html" class="btn btn-primary">Checkout</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero compact-hero">
+        <div class="container">
+          <span class="eyebrow">Shopping cart</span>
+          <h1>Your selected parts</h1>
+        </div>
+      </section>
+
+      <section class="section container cart-layout">
+        <div class="cart-items" id="cart-items"></div>
+
+        <aside class="summary-box">
+          <h3>Order summary</h3>
+          <div class="summary-row">
+            <span>Items</span>
+            <strong id="summary-items">0</strong>
+          </div>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <strong id="summary-subtotal">$0.00</strong>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <strong id="summary-shipping">Free</strong>
+          </div>
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <strong id="summary-total">$0.00</strong>
+          </div>
+          <a href="checkout.html" class="btn btn-primary block-btn">Proceed to checkout</a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">V</span>
+            <span>VoltCore</span>
+          </a>
+          <p>Performance gear for your next build.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

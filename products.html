@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | VoltCore</title>
+    <meta name="description" content="Browse premium PC components including AMD CPUs, NVIDIA GPUs, DDR4/DDR5 memory, SSDs, HDDs, M.2, and cooling fans." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">V</span>
+          <span>VoltCore</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html" class="active">Products</a>
+          <a href="cart.html">Cart <span class="cart-badge" id="cart-badge">0</span></a>
+        </nav>
+
+        <a href="checkout.html" class="btn btn-primary">Checkout</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero compact-hero">
+        <div class="container">
+          <span class="eyebrow">Storefront</span>
+          <h1>Premium PC parts</h1>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="toolbar">
+          <div class="filter-group" aria-label="Filter products">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="cpu">CPU</button>
+            <button class="filter-btn" data-filter="gpu">GPU</button>
+            <button class="filter-btn" data-filter="ram">RAM</button>
+            <button class="filter-btn" data-filter="storage">Storage</button>
+            <button class="filter-btn" data-filter="cooling">Cooling</button>
+            <button class="filter-btn" data-filter="motherboard">Motherboard</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">V</span>
+            <span>VoltCore</span>
+          </a>
+          <p>Premium performance hardware for serious systems.</p>
+        </div>
+
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html">All products</a></li>
+            <li><a href="products.html">AMD</a></li>
+            <li><a href="products.html">NVIDIA</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="#">Help center</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoltCore | Premium PC Components</title>
+    <meta
+      name="description"
+      content="Premium PC components store for AMD and NVIDIA CPUs, GPUs, RAM, SSDs, HDDs, M.2 drives, cooling fans, and more."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">V</span>
+          <span>VoltCore</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="products.html">Products</a>
+          <a href="cart.html">Cart <span class="cart-badge" id="cart-badge">0</span></a>
+        </nav>
+
+        <a href="checkout.html" class="btn btn-primary">Checkout</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Built for performance</span>
+            <h1>Upgrade your rig with premium hardware</h1>
+            <p>
+              Discover new AMD and NVIDIA CPUs, GPUs, DDR4 and DDR5 RAM,
+              SSDs, HDDs, M.2 storage, cooling fans, and everything needed to
+              build or upgrade a beast PC.
+            </p>
+            <div class="hero-actions">
+              <a href="products.html" class="btn btn-primary">Shop now</a>
+              <a href="#categories" class="btn btn-secondary">Explore parts</a>
+            </div>
+            <ul class="trust-list">
+              <li>Same-day dispatch</li>
+              <li>Official warranty</li>
+              <li>New sealed stock</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="floating-card card-1">
+              <span class="card-label">Top Seller</span>
+              <strong>RTX 4080 Super</strong>
+              <small>16GB GDDR6X</small>
+            </div>
+            <div class="floating-card card-2">
+              <span class="card-label">Performance</span>
+              <strong>Ryzen 9 7900X</strong>
+              <small>12 cores / 24 threads</small>
+            </div>
+            <div class="hero-product">
+              <div class="gpu-glow"></div>
+              <div class="gpu-box">
+                <span class="gpu-chip"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-bar container">
+        <div>
+          <strong>12k+</strong>
+          <span>Parts shipped</span>
+        </div>
+        <div>
+          <strong>4.9/5</strong>
+          <span>Customer rating</span>
+        </div>
+        <div>
+          <strong>24/7</strong>
+          <span>Support</span>
+        </div>
+        <div>
+          <strong>2-year</strong>
+          <span>Warranty</span>
+        </div>
+      </section>
+
+      <section id="categories" class="section container">
+        <div class="section-header">
+          <span class="eyebrow">Categories</span>
+          <h2>Find the exact hardware you need</h2>
+        </div>
+
+        <div class="category-grid">
+          <a href="products.html#cpu" class="category-card">
+            <div class="icon">🧠</div>
+            <h3>Processors</h3>
+            <p>AMD Ryzen and high-performance CPUs</p>
+          </a>
+          <a href="products.html#gpu" class="category-card">
+            <div class="icon">🎮</div>
+            <h3>Graphics</h3>
+            <p>NVIDIA RTX cards and AMD Radeon power</p>
+          </a>
+          <a href="products.html#ram" class="category-card">
+            <div class="icon">💾</div>
+            <h3>Memory</h3>
+            <p>DDR4 and DDR5 kits for every build</p>
+          </a>
+          <a href="products.html#storage" class="category-card">
+            <div class="icon">⚡</div>
+            <h3>Storage</h3>
+            <p>SSD, HDD, and M.2 performance drives</p>
+          </a>
+          <a href="products.html#cooling" class="category-card">
+            <div class="icon">❄️</div>
+            <h3>Cooling</h3>
+            <p>Air coolers, AIOs, and fans</p>
+          </a>
+          <a href="products.html#motherboards" class="category-card">
+            <div class="icon">🧩</div>
+            <h3>Boards</h3>
+            <p>Premium motherboards for AMD & Intel</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Featured products</span>
+            <h2>Built to dominate every workload</h2>
+          </div>
+
+          <div class="product-grid featured-products">
+            <article class="product-card">
+              <div class="product-image image-1"></div>
+              <div class="product-body">
+                <span class="tag">GPU</span>
+                <h3>MSI GeForce RTX 4070 Super</h3>
+                <div class="rating">★★★★★ <span>4.9</span></div>
+                <div class="price-row">
+                  <strong>$799</strong>
+                  <button class="add-cart" data-id="gpu-rtx4070">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image image-2"></div>
+              <div class="product-body">
+                <span class="tag">CPU</span>
+                <h3>AMD Ryzen 9 7900X</h3>
+                <div class="rating">★★★★★ <span>4.8</span></div>
+                <div class="price-row">
+                  <strong>$489</strong>
+                  <button class="add-cart" data-id="cpu-ryzen7900x">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image image-3"></div>
+              <div class="product-body">
+                <span class="tag">RAM</span>
+                <h3>G.Skill DDR5 32GB 6000MHz</h3>
+                <div class="rating">★★★★★ <span>4.9</span></div>
+                <div class="price-row">
+                  <strong>$179</strong>
+                  <button class="add-cart" data-id="ram-ddr5-32">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image image-4"></div>
+              <div class="product-body">
+                <span class="tag">SSD</span>
+                <h3>Samsung 990 Pro 2TB NVMe</h3>
+                <div class="rating">★★★★★ <span>5.0</span></div>
+                <div class="price-row">
+                  <strong>$169</strong>
+                  <button class="add-cart" data-id="ssd-990pro-2tb">Add to cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-header">
+          <span class="eyebrow">Why VoltCore</span>
+          <h2>Performance-first shopping experience</h2>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-box">
+            <span class="feature-icon">🚚</span>
+            <h3>Fast shipping</h3>
+            <p>Secure delivery of sealed OEM and retail PC components across the region.</p>
+          </div>
+          <div class="feature-box">
+            <span class="feature-icon">🛡️</span>
+            <h3>Guaranteed support</h3>
+            <p>Every product includes official warranty coverage and expert assistance.</p>
+          </div>
+          <div class="feature-box">
+            <span class="feature-icon">⚙️</span>
+            <h3>Expert curated stock</h3>
+            <p>Only performance-grade, high-quality, current-generation hardware.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="container">
+          <div class="section-header center">
+            <span class="eyebrow">Testimonials</span>
+            <h2>Players and builders trust VoltCore</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <blockquote>
+              “I upgraded to a Ryzen 9 + RTX 4080 setup and the build quality and support were excellent.”
+              <footer>— Daniel R.</footer>
+            </blockquote>
+            <blockquote>
+              “The DDR5 kit and SSD combo were exactly what I needed for my new gaming PC.”
+              <footer>— Sarah K.</footer>
+            </blockquote>
+            <blockquote>
+              “Fast delivery, fair pricing, and premium quality components—highly recommended.”
+              <footer>— Marcus T.</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">V</span>
+            <span>VoltCore</span>
+          </a>
+          <p>Your premium destination for performance PC parts.</p>
+        </div>
+
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html">CPUs</a></li>
+            <li><a href="products.html">GPUs</a></li>
+            <li><a href="products.html">Storage</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="checkout.html">Order status</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

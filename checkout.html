@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | VoltCore</title>
+    <meta name="description" content="Complete your premium PC parts order with VoltCore." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">V</span>
+          <span>VoltCore</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="cart.html">Cart <span class="cart-badge" id="cart-badge">0</span></a>
+        </nav>
+
+        <a href="checkout.html" class="btn btn-primary active-btn">Checkout</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero compact-hero">
+        <div class="container">
+          <span class="eyebrow">Secure checkout</span>
+          <h1>Complete your order</h1>
+        </div>
+      </section>
+
+      <section class="section container checkout-layout">
+        <form id="checkout-form" class="checkout-form">
+          <div class="form-row">
+            <label>
+              Full name
+              <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+          </div>
+
+          <div class="form-row two-columns">
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" placeholder="+1 555 123 4567" required />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Shipping address
+              <input type="text" name="address" placeholder="Street address" required />
+            </label>
+          </div>
+
+          <div class="form-row two-columns">
+            <label>
+              City
+              <input type="text" name="city" placeholder="City" required />
+            </label>
+            <label>
+              ZIP code
+              <input type="text" name="zip" placeholder="ZIP" required />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Payment method
+              <select name="payment" required>
+                <option value="">Choose</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Bank Transfer">Bank Transfer</option>
+              </select>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary block-btn">Place order</button>
+          <p id="checkout-message" class="checkout-message" aria-live="polite"></p>
+        </form>
+
+        <aside class="summary-box">
+          <h3>Order summary</h3>
+          <div id="checkout-summary-items"></div>
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <strong id="checkout-total">$0.00</strong>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">V</span>
+            <span>VoltCore</span>
+          </a>
+          <p>Premium performance hardware and support.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
